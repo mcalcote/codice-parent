@@ -12,7 +12,7 @@
  * <http://www.gnu.org/licenses/lgpl.html>.
  *
  **/
-package org.codice.ddf.support
+package org.codice.support
 
 import org.apache.maven.shared.invoker.DefaultInvocationRequest
 import org.apache.maven.shared.invoker.DefaultInvoker
@@ -36,7 +36,7 @@ import java.text.DecimalFormat
 /*
  * This Groovy script is used to add JaCoCo () code coverage tool configuration to one or more pom.xml files.
  *
- * To use the tool, execute the following Maven command from the support-jacoco directory:
+ * To use the tool, execute the following Maven command from the coverage-updater directory:
  *   > mvn groovy:execute -DprojectsRoot=<Maven project root directory>
  *
  * An optional -Ddebug argument can be provided to turn on debug information.

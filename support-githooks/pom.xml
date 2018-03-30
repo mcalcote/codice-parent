@@ -16,16 +16,16 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>ddf.support</groupId>
-        <artifactId>support-pom</artifactId>
-        <version>2.3.13-SNAPSHOT</version>
+        <groupId>codice</groupId>
+        <artifactId>codice-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
 
-    <groupId>ddf.support</groupId>
+    <groupId>codice</groupId>
     <artifactId>support-githooks</artifactId>
-    <name>DDF Support Git Hooks</name>
-    <description>DDF Git Hooks</description>
+    <name>Codice Support Git Hooks</name>
+    <description>Codice Git Hooks</description>
 
     <properties>
         <jgit.version>3.2.0.201312181205-r</jgit.version>

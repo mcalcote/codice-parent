@@ -81,7 +81,7 @@ public class GitIntegrationTest extends RepositoryTestCase {
         // initialize a classpath.txt file since we are unit testing
         writeTrashFile("gitsetup", "classpath.txt", System.getProperty("java.class.path"));
         // initialize a commit-prefix.txt since we are unit testings
-        writeTrashFile("gitsetup", "commit-prefix.txt", "DDF");
+        writeTrashFile("gitsetup", "commit-prefix.txt", "CODICE");
         // initialize a blacklist-words.txt.txt since we are unit testings
         writeTrashFile("gitsetup", "blacklist-words.txt", String.format("bill%nWHAT%n"));
         LOGGER.debug("Installing hook files into {}", db.getDirectory());
@@ -107,15 +107,20 @@ public class GitIntegrationTest extends RepositoryTestCase {
                 args); // should fail with a bad commit message (commit-msg - no ticket number)
         assert (retValue == 1);
 
-        args[2] = "DDF-123 Bad commit message - ticket number but still dirty words: BILL, what.";
+        args[2] = "CODICE-123 Bad commit message - ticket number but still dirty words: BILL, what.";
         retValue = executeGitCommand(
                 args); // should fail with a bad commit message (commit-msg - dirty words in message)
         assert (retValue == 1);
 
-        args[2] = "DDF-123 Good commit message - ticket number and no dirty words.";
+        args[2] = "CODICE-123 Good commit message - ticket number and no dirty words.";
         retValue = executeGitCommand(
                 args); // should pass with both good data and good commit message
         assert (retValue == 0);
+
+        args[2] = "XXX-123 Bad commit message - ticket number but wrong prefix.";
+        retValue = executeGitCommand(
+                args); // should fail with a bad prefix message
+        assert (retValue == 1);
     }
 
     @Test

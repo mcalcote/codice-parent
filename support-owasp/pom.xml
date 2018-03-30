@@ -16,13 +16,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>ddf.support</groupId>
-        <artifactId>support-pom</artifactId>
-        <version>2.3.13-SNAPSHOT</version>
+        <groupId>codice</groupId>
+        <artifactId>codice-parent</artifactId>
+        <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>support-owasp</artifactId>
-    <name>DDF Support OWASP</name>
-    <description>DDF OWASP contains the configuration files used for finding security vulnerabilities</description>
+    <name>Codice Support OWASP</name>
+    <description>Codice OWASP contains the configuration files used for finding security vulnerabilities</description>
 
 </project>

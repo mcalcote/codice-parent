@@ -16,13 +16,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-            <groupId>ddf.support</groupId>
-            <artifactId>support-pom</artifactId>
-            <version>2.3.13-SNAPSHOT</version>
+            <groupId>codice</groupId>
+            <artifactId>codice-parent</artifactId>
+            <version>1.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>support-findbugs</artifactId>
-    <name>DDF Support Findbugs</name>
-    <description>DDF Findbugs contains file for finding bugs</description>
+    <name>Codice Support Findbugs</name>
+    <description>Codice Findbugs contains file for finding bugs</description>
 
 </project>
