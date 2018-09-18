@@ -276,7 +276,6 @@
         <xom.version>1.2.5</xom.version>
         <xpp3.bundle.version>1.1.4c_6</xpp3.bundle.version>
         <xstream.version>1.4.9</xstream.version>
-        <zip4j.version>1.3.2</zip4j.version>
     </properties>
 
     <distributionManagement>
